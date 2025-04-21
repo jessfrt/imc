@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de IMC Saúde Plus </title>
+  <meta name="description" content="Calculadora de IMC para avaliar seu índice de massa corporal.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7ed6a2" aria-hidden="true">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                 2 6.5 3.5 5 5.5 5c1.54 0 3.04.99 3.57 2.36h1.87
+                 C13.46 5.99 14.96 5 16.5 5 18.5 5 20 6.5 20 8.5
+                 c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <span>Saúde Plus</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Calculadora de IMC</h1>
+      <p>Descubra seu Índice de Massa Corporal e receba dicas saudáveis personalizadas.</p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="calculator section-container">
+      <div class="card">
+        <p class="explicacao">
+          O IMC (Índice de Massa Corporal) é calculado dividindo o peso pela altura ao quadrado.<br>
+          <strong>Fórmula:</strong> IMC = peso / (altura × altura)
+        </p>
+
+        <form id="imcForm">
+          <input type="text"    id="nome"   placeholder="Seu nome"             required>
+          <input type="number"  id="peso"   placeholder="Peso (kg)"            min="0" step="0.1" required>
+          <input type="number"  id="altura" placeholder="Altura (m)"           min="0" step="0.01" required>
+          <button type="submit">Calcular IMC</button>
+        </form>
+
+        <div id="resultado" class="resultado" aria-live="polite"></div>
+        <div id="dica"      class="dica"      aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre section-container">
+      <h2>Sobre o IMC</h2>
+      <p>
+        O IMC é uma referência prática para avaliar riscos associados ao peso. 
+        Lembre‐se de que ele não substitui uma avaliação completa. 
+        Consulte um profissional de saúde para orientações personalizadas.
+      </p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="section-container">
+    <p>Desenvolvido por <strong>Jéssica Freitas</strong> 💚</p>
+    <p>
+      <a href="https://github.com/jessfrt" target="_blank">GitHub</a> •
+      <a href="mailto:saude.plus@gmail.com">gmail</a> •
+      <a href="https://instagram.com/nutrijess" target="_blank">Instagram</a>
+    </p>
+    <p class="assinatura">Cuidando de dentro pra fora.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
